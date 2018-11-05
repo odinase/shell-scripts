@@ -1,0 +1,8 @@
+#!/bin/bash
+
+echo How old are you?
+
+echo "Type in your age: "
+read age
+
+echo Your age is $age

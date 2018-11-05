@@ -1,0 +1,13 @@
+#!/bin/bash
+
+if [ $# -eq 0 ]
+then
+    folder="latex-project"
+else
+    folder=$1
+fi
+
+
+mkdir $folder > /dev/null
+cp -a $HOME/bin/latex-files/. $PWD/$folder/
+git init

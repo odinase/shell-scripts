@@ -1,0 +1,39 @@
+\documentclass[11pt, a4paper, norsk]{article}
+
+% Putt inn packages man bruker i filen "packages.sty"
+\usepackage{packages}
+
+\addbibresource{bibliography.bib} % Makes the bibliography file available to biblatex.
+
+\title{Title}
+
+
+\author{Author}
+\date{Date}
+
+\begin{document}
+
+\maketitle
+
+\vfill
+\begin{figure}
+    \centering
+    \includegraphics[]{figures/logo_ntnu_bokm.pdf}
+    \label{fig:logo}
+\end{figure}
+\thispagestyle{empty}
+\newpage
+\tableofcontents
+\newpage
+
+% Deler hver del opp i sin egen .tex-fil. Dette gjør det mer oversiktlig.
+\include{text}
+
+% Referanser
+\newpage
+\phantomsection
+%\addcontentsline{toc}{section}{Kilder}
+\printbibliography{}%[title={Kilder}]
+\label{sec:bibliography}
+
+\end{document}
