@@ -9,5 +9,6 @@ fi
 
 
 mkdir $folder > /dev/null
-cp -a $HOME/bin/latex-files/. $PWD/$folder/
+cd $folder
+cp -a $HOME/bin/latex-files/. .
 git init
