@@ -10,5 +10,5 @@ fi
 
 mkdir $folder > /dev/null
 cd $folder
-cp -a $HOME/bin/latex-files/. .
+cp -a $HOME/bin/shell-scripts/latex-files/. .
 git init
