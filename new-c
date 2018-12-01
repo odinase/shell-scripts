@@ -1,0 +1,17 @@
+#!/bin/bash
+
+DEFAULT_PROJECT_NAME="c-project"
+FILE_FOLDER=c-files
+
+if [ $# -eq 0 ]
+then
+    folder=$DEFAULT_PROJECT_NAME
+else
+    folder=$1
+fi
+
+
+mkdir $folder > /dev/null
+cd $folder
+cp -a $HOME/bin/shell-scripts/$FILE_FOLDER/. .
+git init
