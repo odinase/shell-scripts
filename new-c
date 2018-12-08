@@ -15,3 +15,6 @@ mkdir $folder > /dev/null
 cd $folder
 cp -a $HOME/bin/shell-scripts/$FILE_FOLDER/. .
 git init
+git clone https://github.com/odinase/.vscode-cheat.git
+mv .vscode-cheat .vscode
+code .
